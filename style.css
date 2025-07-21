@@ -1,0 +1,244 @@
+@font-face {
+font-family:"Ranchers";
+src: url(Ranchers-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SpecialGothicExpandedOne";
+    src: url(SpecialGothicExpandedOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SpecialGothicExpandedOne";
+    src: url(AlfaSlabOne-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: blue;
+    position: relative;
+    height: 100px;
+}
+
+.logo{
+    display: inline-block;
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.wel {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px;
+    color: aqua;
+    font-family: "Ranchers", Verdana, Tahoma, sans-serif;
+}
+
+.centerlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.centerlogo img {
+    height: 500px;
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.joinnow{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px auto;
+}
+@media (max-width: 600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction:column;
+        text-align: center;
+        background:yellow;
+    gap: 0;
+    overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5
+    }
+}
+
+.button1{
+    display: inline-block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+
+.button1:active {
+    transform: scale(0.95);
+}
+
+.about-section{
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about-header h1 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 100px;
+    color: aqua;
+    font-family: "Ranchers", Verdana, Tahoma, sans-serif;
+}
+
+.ssllogo {
+    height: 125px;
+    width: 120px;
+    display: block;
+    margin: 0;
+    justify-content: flex-start;
+    flex-shrink: 0;}
+
+    .ssl-text {
+    font-family: 'Times New Roman', Times, serif;
+    color: black
+}
+
+.member-header{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 100px;
+    color: red;
+    font-family: "SpecialGothicExpandedOne", Verdana, Tahoma, sans-serif;
+}
+
+
+.contact-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 80px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 5%;
+    color: #333;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    resize: vertical; /* Allow vertical resizing */
+    font-family: inherit;}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px; /* Added for spacing */
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #388e3c;
+}
+
+
+html.contact-page, body.contact-page {
+    background: transparent !important;
+}
+
+.contactbg {
+    background-image: url(/usl.png);
+    width: 100%;
+height: 100%;
+background-size: cover;}
