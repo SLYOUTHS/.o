@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="index-phone.html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SL YOUTH - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="SL1.png">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+    
+        background-position: center
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #0033a0;
+        padding: 10px 0;
+        width: 100vw;
+        position: relative;
+      }
+      .logo img {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 10px;
+      }
+      .menu-icon {
+        display: none;
+        font-size: 32px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        z-index: 101;
+      }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100vw;
+        background: #0033a0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+        z-index: 100;
+      }
+      nav ul.show {
+        max-height: 400px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      }
+      nav ul li {
+        width: 100vw;
+        text-align: center;
+        border-bottom: 1px solid #fff2;
+      }
+      nav ul li:last-child {
+        border-bottom: none;
+      }
+      nav ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 18px 0;
+        transition: background 0.2s, color 0.2s;
+      }
+      nav ul li a:hover {
+        background: #ffd700;
+        color: #0033a0;
+      }
+      .wel {
+        text-align: center;
+        margin: 30px 0 10px 0;
+        font-size: 2.2em;
+        color: #0033a0;
+        font-family: "Ranchers", Verdana, Tahoma, sans-serif;
+        letter-spacing: 2px;
+      }
+      .centerlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .centerlogo img {
+        max-width: 80vw;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100vw;
+        padding: 10px;
+      }
+      .flex-box {
+        width: 93vw;
+        max-width: 500px;
+        min-height: 220px;
+        background: linear-gradient(135deg,#ff66c4,#ffde59);
+        color: #fff;
+        font-size: 1.1em;
+        text-align: center;
+        line-height: 1.6;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .flex-box h2 {
+        margin: 0 0 10px 0;
+        font-size: 1.5em;
+        color: #0033a0;
+        font-family: "Ranchers", Verdana, Tahoma, sans-serif;
+      }
+      .button1 {
+        display: inline-block;
+        background-color: #0033a0;
+        border: none;
+        color: #fff;
+        padding: 12px 28px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        margin: 18px auto 0 auto;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: background 0.3s;
+      }
+      .button1:hover {
+        background-color: #ffd700;
+        color: #0033a0;
+      }
+      @media (min-width: 700px) {
+        .menu-icon {
+          display: none !important;
+        }
+        nav ul {
+          position: static;
+          flex-direction: row;
+          gap: 30px;
+          width: auto;
+          background: #0033a0;
+          max-height: none;
+          overflow: visible;
+        }
+        nav ul li {
+          width: auto;
+          border-bottom: none;
+        }
+        .flex-container {
+          flex-direction: row;
+          justify-content: center;
+          gap: 30px;
+        }
+        .flex-box {
+          width: 300px;
+          min-height: 350px;
+        }
+        .centerlogo img {
+          max-width: 500px;
+        }
+        .wel {
+          font-size: 3em;
+        }
+      }
+      @media (max-width: 700px) {
+        .menu-icon {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="SL.png" alt="SL Youth Logo" id="logo"/>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul id="menuList">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="event.html">Our Event</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="wel">WELCOME TO SL YOUTH!</div>
+
+    <div class="centerlogo">
+      <img src="SL.png" alt="SL Youth Logo Large" id="logo"/>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-box">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to empower St. Lucian youth to celebrate their rich cultural heritage. We connect communities, collaborate with global youth groups, and address key social issues—preserving tradition while inspiring positive change and cultural growth.
+        </p>
+      </div>
+      <div class="flex-box">
+        <h2>Join Us</h2>
+        <p>
+          Whether you’re passionate about our mission, want to make a difference, or simply curious, there’s a place for you here.<br>
+          <br>✅ Volunteer with us <br>
+          ✅ Partner with our projects <br>
+          ✅ Spread the word
+        </p>
+        <a href="joinus.html" class="button1">
+          <ion-icon name="people-outline"></ion-icon>
+          <span class="button__text">Join Now</span>
+        </a>
+      </div>
+      <div class="flex-box">
+        <h2>Our Vision</h2>
+        <p>
+          Our vision is to see St. Lucian youth deeply connected to their culture, united across communities, and empowered to create lasting change—preserving our heritage while embracing global collaboration for a brighter future.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const menuList = document.getElementById("menuList");
+      function toggleMenu() {
+        menuList.classList.toggle("show");
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/61c50faac4.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+  </div>
+</html>
