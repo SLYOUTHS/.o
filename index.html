@@ -6,7 +6,31 @@
     <title>SL YOUTH - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="SL3.png">
-     
+     <script>
+ 
+  function isMobilePhone() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Detect iPad and Android tablets
+    const isIpad = /iPad/.test(ua);
+    const isAndroidTablet = /Android/.test(ua) && !/Mobile/.test(ua);
+    const isTablet = isIpad || isAndroidTablet;
+    
+    // Detect mobile phones (Android phones, iPhones, iPod, etc.), but not tablets
+    const isMobile = (
+      (/Android.*Mobile/.test(ua)) || // Android phones
+      (/iPhone|iPod/.test(ua)) ||     // iPhones/iPods
+      (/BlackBerry|IEMobile|Opera Mini/.test(ua))
+    );
+
+    return isMobile && !isTablet;
+  }
+
+  if (isMobilePhone()) {
+    window.location.href = "mobile.html"; // Change to your mobile-friendly page
+  }
+
+</script>
   </head>
   <body>
     <nav>
