@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div class="index-phone.html">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SL YOUTH - Home</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>SL YOUTH - Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="SL1.png">
+    <link rel="icon" type="image/png" href="SL3.png">
     <style>
       body {
         margin: 0;
@@ -241,9 +240,16 @@
     </div>
 
     <script>
-      const menuList = document.getElementById("menuList");
-      function toggleMenu() {
-        menuList.classList.toggle("show");
+     
+      let menuList = document.getElementById("menuList")
+      menuList.style.maxHeight = "0px"
+
+      function toggleMenu(){
+        if(menuList.style.maxHeight === "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px"
+        }
       }
     </script>
     <script src="https://kit.fontawesome.com/61c50faac4.js" crossorigin="anonymous"></script>
