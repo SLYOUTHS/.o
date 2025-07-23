@@ -6,6 +6,17 @@
     <title>SL YOUTH - Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="SL3.png">
+    <script>
+  // Function to check if the device is mobile
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Redirect if mobile
+  if (isMobileDevice()) {
+    window.location.href = "index-phone.html"; // Change 'mobile.html' to your target HTML file
+  }
+</script>
   </head>
   <body>
     <nav>
