@@ -12,6 +12,17 @@
       <div class="logo">
        <a href="index.html"><img src="SL.png" style="height: 125; width: 120px;" id="logo"/></a>
 
+ <style> 
+    
+ html, body{
+      background-image: url("usl.png");
+    }
+
+    </style>
+
+
+
+       
       </div>
       <ul id="menuList">
          <li><a href="aboutus.html">About Us</a></li>
@@ -22,6 +33,302 @@
         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
       </div>
     </nav>
+
+<div class="event-content">
+      <h1>Upcoming Events</h1>
+      <p>
+        Stay tuned for our latest youth gatherings, workshops, and cultural celebrations!<br>
+        Check back soon for updates and details on how to join.
+      </p>
+    </div>
+    
+
+
+
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+  }
+  
+  .flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-box{
+    width: 350px;
+    height: 250px;
+    background: linear-gradient(#ff66c4,#ffde59);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    align-items: center;
+  
+  }
+
+  .flex-box-2{
+    width: 600px;
+    height: 250px;
+    background: linear-gradient(#ff66c4,#ffde59);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    align-items: center;
+  
+  }
+</style>
+<br>
+<div class="flex-container">
+  <div class="flex-box">
+     <div class="mySlides fade">
+  
+    <img src="img9.png" style="height: 250px; width: 100%; border-radius: 10px;">
+
+    <style>
+      .img1 {
+         width: 350px;
+    height: 250px;
+
+      }
+    </style>
+  
+  </div>
+
+<div class="mySlides fade">
+   
+    <img src="img6.jpeg" style="height: 100%; width: 100%; border-radius: 10px;">
+  </div>
+
+
+  <div class="mySlides fade">
+   
+    <img src="img7.jpeg" style="height: 250px; width: 100%; border-radius: 10px;">
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="img8.jpeg" style="height: 250px; width: 100%; border-radius: 10px;">
+
+    <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+   
+  </div>
+    </div>
+    <div class="flex-box-2">
+
+      <h1>USLOA Convention</h1>
+      
+<p>Being at the USLOA 215T Convention in St. Croix was amazing! We met people worldwide, learned St. Lucian culture, and heard inspiring migration stories. Everyone was so welcoming huge thanks to Jn-Baptiste and Luna William for the support.</p>
+ 
+
+      
+    </div>
+    
+
+    
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+  }
+  
+  .flex-container4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-box4{
+    width: 350px;
+    height: 250px;
+    background: linear-gradient(#ff66c4,#ffde59);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    align-items: center;
+  
+  }
+
+  .flex-box-5{
+    width: 600px;
+    height: 250px;
+    background: linear-gradient(#ff66c4,#ffde59);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    align-items: center;
+  
+  }
+</style>
+<br>
+
+      </div>
+    </div>
+    <br>
+    <div class="flex-container4">
+      <div class="flex-box4">
+        <div class="mySlides2 fade">
+          <img src="img2.jpeg" style="height: 250px; width: 100%; border-radius: 10px;">
+        </div>
+        <div class="mySlides2 fade">
+          <img src="img3.jpeg" style="height: 100%; width: 100%; border-radius: 10px;">
+        </div>
+        <div class="mySlides2 fade">
+          <img src="img4.jpeg" style="height: 250px; width: 100%; border-radius: 10px;">
+        </div>
+  
+        <div style="text-align:center">
+          <span class="dot2" onclick="currentSlide2(1)"></span>
+          <span class="dot2" onclick="currentSlide2(2)"></span>
+          <span class="dot2" onclick="currentSlide2(3)"></span>
+          <span class="dot2" onclick="currentSlide2(4)"></span>
+        </div>
+      </div>
+      <div class="flex-box-5">
+        <h1>La Rose</h1>
+        <p>The La Rose Festival in St. Croix was awesome! From the royal court’s outfits to the fun doctor, judge, and guard portrayals, plus soulful singing and dancing everything felt alive with culture and joy. Can’t wait for the next celebration!</p>
+ 
+
+      
+    </div>
+    
+
+    
+</div>
+<script>
+ let slideIndex2 = 0;
+      showSlides2();
+      function showSlides2() {
+        let i;
+        let slides2 = document.getElementsByClassName("mySlides2");
+        let dots2 = document.getElementsByClassName("dot2");
+        for (i = 0; i < slides2.length; i++) {
+          slides2[i].style.display = "none";
+        }
+        slideIndex2++;
+        if (slideIndex2 > slides2.length) {slideIndex2 = 1}
+        for (i = 0; i < dots2.length; i++) {
+          dots2[i].className = dots2[i].className.replace(" active", "");
+        }
+        slides2[slideIndex2-1].style.display = "block";
+        dots2[slideIndex2-1].className += " active";
+        setTimeout(showSlides2, 4000);
+      }
+</script>
+
+<br>
+<br>
+
+<div class="footer20">
+  <div class="contrianer20">
+    <p><a>‎ ‎ ‎ ‎ &copy; 2025 SL Youths. All rights reserved.</a></p>
+    <ul>
+      <br>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<style>
+
+ 
+
+
+.footer20 {
+  padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: blue;
+      
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+}
+.footer20 p {
+  color: white;
+}
+.contrianer20 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer20 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer20 li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer20 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.footer20 a:hover {
+  text-decoration: #ffde59;
+}
+
+
+</style>
+
+    
 <script>
   let menuList = document.getElementById("menuList")
   menuList.style.maxHeight = "0px"
@@ -40,3 +347,4 @@
 
   </body>
 </html>
+
